@@ -1,0 +1,324 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+/* Full page settings */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #f3f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left a, .navbar-right a {
+    color: rgb(6, 6, 6);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.navbar-right a {
+    margin-left: 40px;
+}
+
+.logo {
+    height: 40px;
+}
+
+/* Top Image Section */
+.top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url('https://wallpapers.com/images/high/weathering-with-you-rooftop-view-niionx1zj2ic210f.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 60px;
+}
+
+.top .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top .text h1 {
+    color: white;
+    font-size: 3em;
+}
+
+/* Image Grid (4 rows, 2 columns) */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.image-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.image-box {
+    position: relative;
+    width: 45%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-box p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Hover effect: Show a related image for each box */
+
+/* Box 1 - Taj Mahal */
+.box-1::after {
+    content: '';
+    background-image: url('image11.jpg'); /* Replace with the actual hover image URL */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.box-1:hover::after {
+    opacity: 1;
+}
+
+/* Box 2 - Great Wall of China */
+.box-2::after {
+    content: '';
+    background-image: url('image12.jpg'); /* Replace with the actual hover image URL */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.box-2:hover::after {
+    opacity: 1;
+}
+
+/* Box 3 - The Colosseum */
+.box-3::after {
+    content: '';
+    background-image: url('image13.jpg'); /* Replace with the actual hover image URL */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.box-3:hover::after {
+    opacity: 1;
+}
+
+/* Box 4 - Machu Picchu */
+.box-4::after {
+    content: '';
+    background-image: url('image14.jpg'); /* Replace with the actual hover image URL */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.box-4:hover::after {
+    opacity: 1;
+}
+
+/* Box 5 - Angkor Wat */
+.box-5::after {
+    content: '';
+    background-image: url('image15.jpg'); /* Replace with the actual hover image URL */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.box-5:hover::after {
+    opacity: 1;
+}
+
+/* Box 6 - Christ The Redeemer */
+.box-6::after {
+    content: '';
+    background-image: url('image16.jpg'); /* Replace with the actual hover image URL */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.box-6:hover::after {
+    opacity: 1;
+}
+
+/* Box 7 - Chichen Itza */
+.box-7::after {
+    content: '';
+    background-image: url('image17.jpg'); /* Replace with the actual hover image URL */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.box-7:hover::after {
+    opacity: 1;
+}
+
+/* Box 8 - Petra */
+.box-8::after {
+    content: '';
+    background-image: url('image18.jpg'); /* Replace with the actual hover image URL */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.box-8:hover::after {
+    opacity: 1;
+}
+
+/* Bottom Section */
+.bottom {
+    width: 100%;
+    min-height: 40vh;
+    background-image: url('https://wallpapers.com/images/high/aesthetic-desktop-pictures-7w7xh5qajkajfqn3.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bottom .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+    color: white;
+}
+
+.bottom .text {
+    text-align: left;
+}
+
+.bottom .text p {
+    margin: 5px 0;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons i {
+    font-size: 24px;
+    margin-left: 10px;
+    color: white;
+}
+
+/* Scroll Effect */
+body {
+    scroll-behavior: smooth;
+}
